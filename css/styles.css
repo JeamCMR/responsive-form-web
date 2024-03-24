@@ -38,6 +38,7 @@ body {
     width: 100%;
     max-width: 820px;
     height: 25%;
+    min-height: 180px;
     text-align: center;
     margin: 0 auto;
     justify-content: center;
@@ -54,6 +55,7 @@ body {
     
 }
 
+/* fomulario */
 
 #container{
   width: 100%;
@@ -79,8 +81,15 @@ form label{
     color: #CDD5E0;
 }
 
-select *{
+select {
     font-weight: bold;
+    background: url(../img/Expand_down.svg);
+    background-repeat: no-repeat;
+    appearance: none;
+    background-position: right;
+    background-color: var(--main-white);
+    background-size: 17px;
+    background-position-x: 97%;
 }
 
 .input-main{
@@ -93,4 +102,23 @@ select *{
 textarea{
    border-radius: 1rem;
    padding: 15px;
+   resize: none;
+   border: 1px transparent;
+   height: 160px;
 }
+
+textarea::placeholder{
+    font-weight: bold ;
+    color: black;
+}
+
+.button{
+    margin-top: 20px;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border: 1px transparent;
+    color: #4036A9;
+    font-size: 15px;
+    font-weight: 700;
+}
+
