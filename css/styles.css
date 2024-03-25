@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url(../img/bg-image.svg);
-    padding: 2rem;
+    padding: 1rem;
     background-size: cover;
     line-height: 1.5;
 }
@@ -28,7 +28,7 @@ body {
 /*header*/
 #header-main {
     width: 100%;
-    min-height: 33px;
+    min-height: 30px;
     margin-bottom: 2rem;
 }
 
@@ -40,8 +40,9 @@ body {
     height: 25%;
     min-height: 180px;
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
     justify-content: center;
+
 }
 
 .section-title {
@@ -49,35 +50,38 @@ body {
     margin-bottom: 10px;
 }
 
-.section-paragraph{
+.section-paragraph {
     font-size: 1.5rem;
     font-weight: 300;
-    
+
 }
 
 /* fomulario */
 
-#container{
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  background-color:   #b5aef35b;
+#container {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: #b5aef35b;
     border-radius: 20px;
+    margin: 0 auto;
+
 }
 
-form{
+form {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-form label{
-    font-size:  0.875rem;
+form label {
+    font-size: 0.875rem;
 }
- input::placeholder{
+
+input::placeholder {
     color: #CDD5E0;
 }
 
@@ -92,27 +96,29 @@ select {
     background-position-x: 97%;
 }
 
-.input-main{
+.input-main {
     padding: 1rem;
     border: 1px transparent;
     border-radius: 10px;
     margin-bottom: 1rem;
+    min-height: 41px;
+    min-width: 45%;
 }
 
-textarea{
-   border-radius: 1rem;
-   padding: 15px;
-   resize: none;
-   border: 1px transparent;
-   height: 160px;
+textarea {
+    border-radius: 1rem;
+    padding: 15px;
+    resize: none;
+    border: 1px transparent;
+    height: 160px;
 }
 
-textarea::placeholder{
-    font-weight: bold ;
+textarea::placeholder {
+    font-weight: bold;
     color: black;
 }
 
-.button{
+.button {
     margin-top: 20px;
     padding: 1.2rem;
     border-radius: 10px;
@@ -122,3 +128,83 @@ textarea::placeholder{
     font-weight: 700;
 }
 
+.div-compo {
+    display: contents;
+
+}
+
+.div-compo-area {
+    display: contents;
+}
+
+.div-compo-button {
+    display: contents;
+}
+
+/*Media querys responsive*/
+
+@media screen and (min-width:1024px) {
+
+
+    #container {
+        height: 60%;
+    }
+
+
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .div-compo {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        height: auto;
+    }
+
+    .div-compo-area {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+
+    .input-main {
+        width: 100%;
+        height: 60px;
+        margin: 0 0 1rem 0;
+
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .button {
+
+        padding: 1rem;
+        font-size: 17px;
+        font-weight: 800;
+        height: 60px;
+        width: 100%;
+
+    }
+
+    .div-compo-button {
+        width: 100%;
+    }
+
+    form label {
+        font-size: 1rem;
+        margin: 1px;
+    }
+
+
+}
